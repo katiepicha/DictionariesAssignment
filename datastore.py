@@ -57,4 +57,7 @@ outfile = open("retail_store.csv", 'w')
 outfile.write('room-number,use,sq-ft,price\n')
 
 for l in datastore['medical']:
-  outfile.write(str(l["room-number"]) + ',' + l['use'] + ',' + str(l["sq-ft"]) + ',' + str(l["price"]) + '\n'
+  outfile.write(str(l["room-number"]) + ',' + l['use'] + ',' + str(l["sq-ft"]) + ',' + str(l["price"]) + '\n')
+# str method must be used because integers and floats must be converted to a string in order to write a file
+
+outfile.close()
