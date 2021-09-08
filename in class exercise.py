@@ -15,3 +15,5 @@ def main():
 # Call the main function.
 main()
 
+outfile = open("philosophers.txt", 'a')
+outfile.write('\nKatie Picha')
